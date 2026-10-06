@@ -15,7 +15,31 @@
   --shadow: 0 10px 40px rgba(79, 70, 229, 0.1);
   --brand-gradient: linear-gradient(90deg, #3b6fd4, #2e9e6e, #d6268f);
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
 
+.pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button.active {
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: linear-gradient(135deg, #0f172a, #1e1b2e);
